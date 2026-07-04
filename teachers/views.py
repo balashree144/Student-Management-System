@@ -103,4 +103,3 @@ def delete_teacher(request, teacher_id):
             return JsonResponse({'error': 'Teacher not found.'}, status=404)
     else:
         return JsonResponse({'error': 'Invalid request method.'}, status=400)           
-   
