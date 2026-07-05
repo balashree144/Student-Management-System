@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-kzsh2&t8op^l&@m2s+iiw_=f+ygog&917lfaj@#)l$d4*xq-ww'
+SECRET_KEY = 'django-insecure-9gcxkw7-q$pto5078^6a!g1a3awrdu-1(xe=(%3u*j-w$38l&='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'student',
+    'students',
+    'teachers',
 ]
 
 MIDDLEWARE = [
@@ -76,16 +77,13 @@ WSGI_APPLICATION = 'student_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'student_db',
+        'NAME': 'miniproject',
         'USER': 'root',
-        'PASSWORD': '1234',
+        'PASSWORD': 'nachu08',
         'HOST': 'localhost',
-        'PORT': '3307',
+        'PORT': '3306',
     }
 }
-
-    
-
 
 
 # Password validation
